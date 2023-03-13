@@ -1,0 +1,63 @@
+:root {
+    --leadcolor: #8C0000;
+    --leadcolor2: #6a0000;
+    --bgcolor: rgba(255, 255, 255);
+}
+
+html, body {
+    background-color: var(--bgcolor);
+    font-family: "Lucida Sans Unicode";
+    margin:0; 
+    height:100%;
+    width:100%;
+    position: relative; 
+    overflow: hidden;
+}
+
+/* main gray border inside the page */
+div.mainSection {
+    border-width: 2px;
+    border-color: rgba(0, 0, 0, 0.04);
+    border-style: solid;
+    width: 95%;
+    top: 10px;
+}
+
+/* https://www.freecodecamp.org/news/css-vertical-align-how-to-center-a-div-text-or-an-image-example-code/ */
+/* centered horizontally */
+#centered {
+    margin: 0;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+/* https://stackoverflow.com/a/38947999 */
+/* text for any background */
+.multitext {
+    color:white;
+    font-weight: bold;
+    text-shadow: 2px 0 var(--leadcolor), -2px 0 var(--leadcolor), 
+                 0 2px var(--leadcolor), 0 -2px var(--leadcolor), 
+                 1px 1px var(--leadcolor), -1px -1px var(--leadcolor), 
+                 1px -1px var(--leadcolor), -1px 1px var(--leadcolor);
+}
+
+
+/* https://stackoverflow.com/a/10405962 */
+/* nested sublevel list, 1 - 1.1, 1.2 etc */
+ul.sublevelList, ul.sublevelList ul {
+    counter-reset: item
+}
+
+ul.sublevelList li {
+    display: block
+}
+  
+ul.sublevelList li:before {
+    color: rgb(185, 254, 230);
+    font-weight: bolder;
+    content: counters(item, ".") " ";
+    counter-increment: item
+}
+/* ------------------------------ */

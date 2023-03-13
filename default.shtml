@@ -1,0 +1,25 @@
+
+<head>
+    <base href="/test.com/" />
+    <script type="module" src="detectBrowser.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="default.css">
+</head>
+
+<nav class="menu">
+    <img src="_icons/remox_icon.png" class="logo">
+    <ul>
+        <li><a href="./" class="pagebutton">Home</a></li>
+        <li><a href="news/" class="pagebutton">News</a></li>
+        <li><a href="about/" class="pagebutton">About</a></li>
+        <li><a href="download/" class="pagebutton">Download</a></li>
+    </ul>     
+    
+    <ul>
+        <li><a href="https://www.facebook.com" target=”_blank”><img src="_icons/facebook_icon.png" class="icon"></a></li>
+        <li><a href="https://twitter.com" target=”_blank”><img src="_icons/twitter_icon.png" class="icon"></a></li>
+        <li><a href="https://twitter.com/Grubhub" target=”_blank”><img src="_icons/the_most_important_icon.png" class="icon"></a></li>
+        <li><a href="https://github.com/Oroomis" target=”_blank”><img src="_icons/github_icon.png" class="icon"></a></li>
+        <li><a href="https://discord.com" target=”_blank”><img src="_icons/discord_icon.png" class="icon"></a></li>
+    </ul>
+</nav>
