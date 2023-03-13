@@ -1,0 +1,14 @@
+.menuSection {
+    z-index: 98;
+    position: relative;
+    max-width: 18%;
+
+    background: linear-gradient(90deg, var(--leadcolor2) 95%, rgb(80, 0, 0));
+    background-repeat: no-repeat;
+    
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 100vh;
+    color: white;
+    font-size: 12px;
+}
